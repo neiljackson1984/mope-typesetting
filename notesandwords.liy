@@ -1,0 +1,131 @@
+\version "2.18.2"
+
+\include "sopranoMusic.liy"
+\include "altoMusic.liy"
+\include "tenorMusic.liy"
+\include "bassMusic.liy"
+
+wx =	%	7 syllables
+\lyricmode{
+vi -- gnes, vi -- gnes, vi -- gno -- let, 
+}
+
+wy =	%	2 syllables
+\lyricmode{
+Mar -- got,
+}
+
+wz =	%	2 syllables
+\lyricmode{
+bien -- tot.
+}
+
+
+wa = 	%	8 syllables
+\lyricmode{
+Mar -- got, la -- bou -- rez les vi -- gnes, 
+}
+
+wb = 	%	8 syllables
+\lyricmode{
+En re -- ve -- nant de Lor -- rai -- ne, 
+}
+
+wc =	%	8 syllables
+\lyricmode{
+Ren -- con -- trai trois ca -- pi -- tai -- nes,
+}
+
+wd = 	%	8 syllables
+\lyricmode{
+Ils m'ont ap -- pe  -- le vi -- lai -- ne,
+}
+
+we = 	%	8 syllables
+\lyricmode{
+Je ne suis pas si vi -- lai -- ne
+}
+
+wf =	%	8 syllables
+\lyricmode{
+Puis -- que le fils du roi m'ai -- me,
+}
+
+wg =	%	8 syllables
+\lyricmode{
+Il m'a don -- ne pour e -- tren -- ne,
+}
+
+wh =	%	8 syllables
+\lyricmode{
+Un bou -- quet de Mar -- jo -- lai -- ne,
+}
+
+wi =	%	8 syllables
+\lyricmode{
+S'il fleu -- rit, je ser -- ais rei -- ne,
+}
+
+wj =	%	8 syllables
+\lyricmode{
+S'il y meurt, je perds ma pei -- ne,
+}
+
+refrain = {\wa \wx \wa \wz}
+
+wordsall = 
+{
+	%{music A%} \refrain
+	%{music B%} \tag #'deleteone {\wb \wy} \wb \wy \tag #'deletetwo {\wc} \tag #'deletethree {\wx \wa \wz}
+
+	%{music A%} \refrain
+	%{music A%} \wd \wx \wd \wz
+	%{music B%} \tag #'deleteone {\we \wy} \we \wy \tag #'deletetwo {\wf} \tag #'deletethree {\wx \wa \wz}
+
+	%{music A%} \refrain
+	%{music A%} \wg \wx \wg \wz
+	%{music B%} \tag #'deleteone {\wh \wy} \wh \wy \tag #'deletetwo {\wi} \tag #'deletethree {\wx \wj \wz}
+
+	%{music A%} \refrain
+}
+
+
+sopranowordsall = \removeWithTag #'deleteone \wordsall
+altowordsall = \removeWithTag #'deleteone \wordsall
+tenorwordsall = \removeWithTag #'deletetwo \wordsall
+basswordsall = \removeWithTag #'deletethree {\removeWithTag #'deletetwo \wordsall}
+
+
+
+
+breakMask = {
+	\mark \markup{\box "1 (A)"}	%{music A%} \repeat unfold 14 { s1 } \bar "||" \break
+	\mark \markup{\box "2 (B)"}	%{music B%} \repeat unfold 26 { s1 } \bar "||" \break
+
+	\mark \markup{\box "3 (A)"}	%{music A%} \repeat unfold 14 { s1 } \bar "||" \break
+	\mark \markup{\box "4 (A)"}	%{music A%} \repeat unfold 14 { s1 } \bar "||" \break
+	\mark \markup{\box "5 (B)"}	%{music B%} \repeat unfold 26 { s1 } \bar "||" \break
+
+	\mark \markup{\box "6 (A)"}	%{music A%} \repeat unfold 14 { s1 } \bar "||" \break
+	\mark \markup{\box "7 (A)"}	%{music A%} \repeat unfold 14 { s1 } \bar "||" \break
+	\mark \markup{\box "8 (B)"}	%{music B%} \repeat unfold 26 { s1 } \bar "||" \break
+
+	\mark \markup{\box "9 (A)"}	%{music A%} \repeat unfold 14 { s1 } 
+	\bar "|."
+}
+
+
+
+
+
+
+timeandkey = 
+{
+	\key d \major 
+	\time 6/8 
+}
+
+
+
+
+
