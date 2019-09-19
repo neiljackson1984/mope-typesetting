@@ -1,5 +1,9 @@
 \version "2.18.2"
 
+% I use the originalBreak variable to represent a line break in the original score.  This
+% is useful when proofreading, but I might want to change where the line breaks occur later -- hence the use of a variable.
+originalBreak = {\break}
+
 \include "sopranoMusic.liy"
 \include "altoMusic.liy"
 \include "tenorMusic.liy"

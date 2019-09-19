@@ -1,40 +1,34 @@
 \version "2.18.2"
 
-% I use the originalBreak variable to represent a line break in the original score.  This
-% is useful when proofreading, but I might want to change where the line breaks occur later -- hence the use of a variable.
-originalBreak = {\break}
-
-sopranoMusic =  
-    \relative {
-        \tempo "Allegro"
-        \autoBeamOff
-        | \barNumberCheck #001     r2.
-        | \barNumberCheck #002     r2.
-        | \barNumberCheck #003     b=8([ d)] fis g4 fis8
-        | \barNumberCheck #004     b,8([ d)] fis g4.~ 
+originalBreakPattern =  
+    {
+        | \barNumberCheck #001     
+        | \barNumberCheck #002     
+        | \barNumberCheck #003     
+        | \barNumberCheck #004     
         
         \originalBreak
-        | \barNumberCheck #005     g2.~
-        | \barNumberCheck #006     g4.~ g8 r r
-        | \barNumberCheck #007     c,([ e)] fis g([ fis)] e
-        | \barNumberCheck #008     dis([ fis)] a c([ b)] a
+        | \barNumberCheck #005     
+        | \barNumberCheck #006     
+        | \barNumberCheck #007     
+        | \barNumberCheck #008     
         
         \originalBreak
-        | \barNumberCheck #009     gis([ b)] cis d([ cis)] b
-        | \barNumberCheck #010     ais([ cis)] e g4. \fermata
-        | \barNumberCheck #011     g8([ fis)] e e([ d)] cis
-        | \barNumberCheck #012     b([ cis)] d d4 cis8
+        | \barNumberCheck #009     
+        | \barNumberCheck #010     
+        | \barNumberCheck #011     
+        | \barNumberCheck #012     
         
         \originalBreak
-        | \barNumberCheck #013     g'([ fis)] e e([ d)] cis
-        | \barNumberCheck #014     b([ cis)] d d4( cis8)
-        | \barNumberCheck #015     cis4 cis8 d4 cis8
-        | \barNumberCheck #016     cis4 c8 fis4 r8 \fermata
+        | \barNumberCheck #013     
+        | \barNumberCheck #014     
+        | \barNumberCheck #015     
+        | \barNumberCheck #016     
         
         \originalBreak
-        | \barNumberCheck #017     r2.
-        | \barNumberCheck #018     r2.
-        | \barNumberCheck #019     b=8([ d)] fis g4.~
+        | \barNumberCheck #017     
+        | \barNumberCheck #018     
+        | \barNumberCheck #019     
         | \barNumberCheck #020     
         
         \originalBreak
