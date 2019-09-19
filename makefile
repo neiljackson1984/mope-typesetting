@@ -1,4 +1,12 @@
+buildFolder=./build
+includes=$(wildcard *.liy)
+targets=$(foreach source,$(wildcard *.ly),${buildFolder}/$(basename $(source)).pdf)
 
+default: $(targets)
 
-mope.pdf: mope.ly sopranoMusic.liy altoMusic.liy tenorMusic.liy bassMusic.liy notesandwords.liy
-	lilypond mope.ly
+${buildFolder}/%.pdf: %.ly ${includes} ${buildFolder}
+	lilypond  --output="$(basename $@)" "$<"
+
+${buildFolder}:
+	mkdir --parents "${buildFolder}"
+	

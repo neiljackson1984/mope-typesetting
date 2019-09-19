@@ -5,22 +5,22 @@ sopranoMusic =
         \tempo "Allegro"
         | \barNumberCheck #001     r2.
         | \barNumberCheck #002     r2.
-        | \barNumberCheck #003     b8( d) fis g4 fis
-        | \barNumberCheck #004     
-        | \barNumberCheck #005     
-        | \barNumberCheck #006     
-        | \barNumberCheck #007     
-        | \barNumberCheck #008     
-        | \barNumberCheck #009     
-        | \barNumberCheck #010     
-        | \barNumberCheck #011     
-        | \barNumberCheck #012     
-        | \barNumberCheck #013     
-        | \barNumberCheck #014     
-        | \barNumberCheck #015     
-        | \barNumberCheck #016     
-        | \barNumberCheck #017     
-        | \barNumberCheck #018     
+        | \barNumberCheck #003     b8( d) fis g4 fis8
+        | \barNumberCheck #004     b8( d) fis g4.~
+        | \barNumberCheck #005     g2.~
+        | \barNumberCheck #006     g4.~ g8 r r
+        | \barNumberCheck #007     c( e) fis g( fis) e
+        | \barNumberCheck #008     dis( fis) a c( b) a
+        | \barNumberCheck #009     gis( b) cis d( cis) b
+        | \barNumberCheck #010     ais( cis) e g4. \fermata
+        | \barNumberCheck #011     g( fis) e e( d) cis
+        | \barNumberCheck #012     b( cis) d d4 cis8
+        | \barNumberCheck #013     g( fis) e e( d) cis
+        | \barNumberCheck #014     b( cis) d d4( cis8)
+        | \barNumberCheck #015     cis4 cis8 d4 cis8
+        | \barNumberCheck #016     cis4 c8 fis4 r8 \fermata
+        | \barNumberCheck #017     r2.
+        | \barNumberCheck #018     r2.
         | \barNumberCheck #019     
         | \barNumberCheck #020     
         | \barNumberCheck #021     
