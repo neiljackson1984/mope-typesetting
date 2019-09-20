@@ -16,7 +16,7 @@ sopranoMusic =
         \originalBreak
         | \barNumberCheck #005     g2.~
         | \barNumberCheck #006     g4.~ g8 r r
-        | \barNumberCheck #007     c,([ e)] fis g([ fis)] e
+        | \barNumberCheck #007     cis,([ e)] fis g([ fis)] e
         | \barNumberCheck #008     dis([ fis)] a c([ b)] a
         
         \originalBreak
@@ -34,24 +34,24 @@ sopranoMusic =
         \originalBreak
         | \barNumberCheck #017     r2.
         | \barNumberCheck #018     r2.
-        | \barNumberCheck #019     b=8([ d)] fis g4.~
-        | \barNumberCheck #020     
+        | \barNumberCheck #019     b=8([ d)] fis g4 fis8
+        | \barNumberCheck #020     b=8([ d)] fis g4.~ 
+                                   
+        \originalBreak             
+        | \barNumberCheck #021     g2.~
+        | \barNumberCheck #022     g4.~ g8 r r
+        | \barNumberCheck #023     cis='([ e)] fis g([ fis)] e
+        | \barNumberCheck #024     dis([ fis)] a c([ b)] a
+                                   
+        \originalBreak             
+        | \barNumberCheck #025     gis([ b)] cis d([ cis)] b
+        | \barNumberCheck #026     ais([ cis)] e g4. \fermata
+        | \barNumberCheck #027     fis=''8([ e]) d d([ cis]) b
+        | \barNumberCheck #028     e[( d]) cis cis[( b]) a
         
         \originalBreak
-        | \barNumberCheck #021     
-        | \barNumberCheck #022     
-        | \barNumberCheck #023     
-        | \barNumberCheck #024     
-        
-        \originalBreak
-        | \barNumberCheck #025     
-        | \barNumberCheck #026     
-        | \barNumberCheck #027     
-        | \barNumberCheck #028     
-        
-        \originalBreak
-        | \barNumberCheck #029     
-        | \barNumberCheck #030     
+        | \barNumberCheck #029     d[( cis]) b b[( a]) gis
+        | \barNumberCheck #030     fis[( gis]) bis c
         | \barNumberCheck #031     
         | \barNumberCheck #032     
         
