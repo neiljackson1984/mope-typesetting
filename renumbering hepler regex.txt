@@ -1,0 +1,3 @@
+[ \t]*\n[ \t]*\n[ \t]*\\originalLineBreak[ \t]*     --->     \t\t\t\\originalLineBreak
+
+[ \t]*\\originalLineBreak[ \t]*\n     --->     \n\n        \\originalLineBreak\n
