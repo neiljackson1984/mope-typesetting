@@ -1,16 +1,7 @@
 \version "2.18.2"
 
-
-
-
 sopranoMusic =  
     \relative {
-        %  print bar numbers on every measure (to aid manual note entry - not for production)
-        \override Score.BarNumber.break-visibility = ##(#f #t #t)
-        %print the 2/4 and 4/4 time signatures with numerals rather than the "C" and "C"-with-a-vertical-line symbol
-        \numericTimeSignature
-        
-        
         \tempo "Allegro"
         \autoBeamOff
         | \barNumberCheck #001     R2.
@@ -21,7 +12,7 @@ sopranoMusic =
         
         | \barNumberCheck #005     g2.~
         | \barNumberCheck #006     g4.~ g8 r r
-        | \barNumberCheck #007     cis,([ e)] fis g([ fis)] e
+        | \barNumberCheck #007     cis='([ e)] fis g([ fis)] e
         | \barNumberCheck #008     dis([ fis)] a c([ b)] a
         \originalLineBreak
         

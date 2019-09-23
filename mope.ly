@@ -107,60 +107,68 @@ scorecontents =
 
 \book
 {
-\header
-{
-	tagline =  "Engraved 2019 in Seattle for The Meridian Ensemble; Yuly Kopkin, Artistic Director"
-}
-
-\markup{<this is the cover page>}
-\pageBreak
-
-\score
-{
-
-	\transpose c c \scorecontents
-
-
-
-	\layout 
-	{
-		%indent = 1\in
-
-		\context
-		{
-			\Staff
-			%\remove Instrument_name_engraver
-            % \accidentalStyle voice
-            \accidentalStyle modern-voice-cautionary
-		}
-	}
-	
     \header
     {
-        title = \markup{ \caps {MOPE N YTEC} } 
-        composer = "<composer goes here>"
-        poet = \markup {
-          \column {
-            \line {
-              "words by TIOTHEBA"
-            }
-            \line {
-                phonetization for English speakers by Yuly Kopkin
-            }
-          }
-       }
-        % arranger = "typeset by Neil Jackson"
-        % breakbefore = ##f
+        tagline =  "Engraved 2019 in Seattle for The Meridian Ensemble; Yuly Kopkin, Artistic Director"
     }
-	\midi
-	{
-		\context 
-		{
-	 		\Score
- 			tempoWholesPerMinute = #(ly:make-moment 60 4)	
-		}
-	}
 
-}	
-	
+    \markup{<this is the cover page>}
+    \pageBreak
+
+    \score
+    {
+        %  print bar numbers on every measure (to aid manual note entry - not for production)
+
+        \transpose c c \scorecontents
+
+
+
+        \layout{
+            %indent = 1\in
+
+            \context{
+                \Staff
+                % \remove Instrument_name_engraver
+                % \accidentalStyle voice
+                \accidentalStyle modern-voice-cautionary
+            }
+            
+            \context{
+                \Score
+                %print the 2/4 and 4/4 time signatures with numerals rather than the "C" and "C"-with-a-vertical-line symbol
+                \numericTimeSignature
+                
+                %  print bar numbers on every measure (to aid manual note entry - not for production)
+                \override BarNumber.break-visibility = ##(#f #t #t)
+            }
+        }
+        
+        \header
+        {
+            title = \markup{ \caps {MOPE N YTEC} } 
+            composer = "<composer goes here>"
+            poet = \markup {
+              \column {
+                \line {
+                  "words by TIOTHEBA"
+                }
+                \line {
+                    phonetization for English speakers by Yuly Kopkin
+                }
+              }
+           }
+            % arranger = "typeset by Neil Jackson"
+            % breakbefore = ##f
+        }
+        \midi
+        {
+            \context 
+            {
+                \Score
+                tempoWholesPerMinute = #(ly:make-moment 60 4)	
+            }
+        }
+
+    }	
 }
+	
