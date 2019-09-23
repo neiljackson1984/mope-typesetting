@@ -34,38 +34,38 @@ scorecontents =
 	\new ChoirStaff
 	<<
 
-		\new Staff = soprano
-		<<
-			\set Staff.instrumentName = "soprano"
-			\set Staff.midiInstrument = #"voice oohs"
-      			\set Staff.midiMinimumVolume = #0.7
-      			\set Staff.midiMaximumVolume = #0.7
-			\new Voice = soprano
-			<<
-				\clef treble
-				\timeandkey
-				\sopranoMusic
-			>>
-			%\new Voice = hiddenlayoutvoice	\breakMask
-		>>
-		%\new Lyrics \lyricsto "soprano" \sopranowordsall
+		% \new Staff = soprano
+		% <<
+			% \set Staff.instrumentName = "soprano"
+			% \set Staff.midiInstrument = #"voice oohs"
+      			% \set Staff.midiMinimumVolume = #0.7
+      			% \set Staff.midiMaximumVolume = #0.7
+			% \new Voice = soprano
+			% <<
+				% \clef treble
+				% \timeandkey
+				% \sopranoMusic
+			% >>
+			% %\new Voice = hiddenlayoutvoice	\breakMask
+		% >>
+		% %\new Lyrics \lyricsto "soprano" \sopranowordsall
 
 		
-		\new Staff = alto
-		<<
-			\set Staff.instrumentName = "alto"
-			\set Staff.midiInstrument = #"voice oohs"
-      			\set Staff.midiMinimumVolume = #0.7
-      			\set Staff.midiMaximumVolume = #0.7
-			\new Voice = alto
-			<<
-				\clef treble
-				\timeandkey
-				\altoMusic
-			>>
-			%\new Voice = hiddenlayoutvoice \breakMask
-		>>
-		%\new Lyrics \lyricsto "alto" \altowordsall
+		% \new Staff = alto
+		% <<
+			% \set Staff.instrumentName = "alto"
+			% \set Staff.midiInstrument = #"voice oohs"
+      			% \set Staff.midiMinimumVolume = #0.7
+      			% \set Staff.midiMaximumVolume = #0.7
+			% \new Voice = alto
+			% <<
+				% \clef treble
+				% \timeandkey
+				% \altoMusic
+			% >>
+			% %\new Voice = hiddenlayoutvoice \breakMask
+		% >>
+		% %\new Lyrics \lyricsto "alto" \altowordsall
 		
 
 		\new Staff = tenor
@@ -86,21 +86,21 @@ scorecontents =
 
 
 
-		\new Staff = bass
-		<<
-			\set Staff.instrumentName = "bass"
-			\set Staff.midiInstrument = #"voice oohs"
-      			\set Staff.midiMinimumVolume = #0.7
-      			\set Staff.midiMaximumVolume = #0.7
-			\new Voice = bass
-			<<
-				\clef bass
-				\timeandkey
-				\bassMusic
-			>>
-			%\new Voice = hiddenlayoutvoice \breakMask
-		>>
-		%\new Lyrics \lyricsto "bass" \basswordsall
+		% \new Staff = bass
+		% <<
+			% \set Staff.instrumentName = "bass"
+			% \set Staff.midiInstrument = #"voice oohs"
+      			% \set Staff.midiMinimumVolume = #0.7
+      			% \set Staff.midiMaximumVolume = #0.7
+			% \new Voice = bass
+			% <<
+				% \clef bass
+				% \timeandkey
+				% \bassMusic
+			% >>
+			% %\new Voice = hiddenlayoutvoice \breakMask
+		% >>
+		% %\new Lyrics \lyricsto "bass" \basswordsall
 	>>
 }
 
