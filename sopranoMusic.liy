@@ -35,7 +35,7 @@ sopranoMusic =
         | \barNumberCheck #013     g'([ fis)] e e([ d)] cis
         | \barNumberCheck #014     b([ cis)] d d4( cis8)
         | \barNumberCheck #015     cis4 cis8 d4 cis8
-        | \barNumberCheck #016     cis4 c8 fis4 r8 \fermata
+        | \barNumberCheck #016     cis4 cis8 fis4 r8 \fermata
         \originalLineBreak
         
         | \barNumberCheck #017     R2.
