@@ -3,6 +3,7 @@
 % I use the originalLineBreak variable to represent a line break in the original score.  This
 % is useful when proofreading, but I might want to change where the line breaks occur later -- hence the use of a variable.
 originalLineBreak = {\break}
+originalPageBreak = {\pageBreak}
 
 \include "sopranoMusic.liy"
 \include "altoMusic.liy"

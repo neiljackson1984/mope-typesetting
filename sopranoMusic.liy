@@ -1,9 +1,6 @@
 \version "2.18.2"
 
-% I use the originalLineBreak variable to represent a line break in the original score.  This
-% is useful when proofreading, but I might want to change where the line breaks occur later -- hence the use of a variable.
-originalLineBreak = {\break}
-originalPageBreak = {\pageBreak}
+
 
 
 sopranoMusic =  
@@ -16,8 +13,8 @@ sopranoMusic =
         
         \tempo "Allegro"
         \autoBeamOff
-        | \barNumberCheck #001     r2.
-        | \barNumberCheck #002     r2.
+        | \barNumberCheck #001     R2.
+        | \barNumberCheck #002     R2.
         | \barNumberCheck #003     b=8([ d)] fis g4 fis8
         | \barNumberCheck #004     b,8([ d)] fis g4.~
         \originalLineBreak
@@ -41,15 +38,15 @@ sopranoMusic =
         | \barNumberCheck #016     cis4 c8 fis4 r8 \fermata
         \originalLineBreak
         
-        | \barNumberCheck #017     r2.
-        | \barNumberCheck #018     r2.
+        | \barNumberCheck #017     R2.
+        | \barNumberCheck #018     R2.
         | \barNumberCheck #019     b,,=8([ d)] fis g4 fis8
         | \barNumberCheck #020     b,=8([ d)] fis g4.~
         \originalLineBreak
         
         | \barNumberCheck #021     g2.~
         | \barNumberCheck #022     g4.~ g8 r r
-        | \barNumberCheck #023     cis='([ e)] fis g([ fis)] e
+        | \barNumberCheck #023     cis,='([ e)] fis g([ fis)] e
         | \barNumberCheck #024     dis([ fis)] a c([ b)] a
         \originalLineBreak
         \originalPageBreak
@@ -63,13 +60,13 @@ sopranoMusic =
         
         | \barNumberCheck #029     d[( cis]) b b[( a]) gis
         | \barNumberCheck #030     fis[( gis]) a a4 gis8
-        | \barNumberCheck #031     d=''[( cis]) b b[( a]) gis
+        | \barNumberCheck #031     d'=''[( cis]) b b[( a]) gis
         | \barNumberCheck #032     fis8[( gis]) a a4( gis8)
         \originalLineBreak
         
         | \barNumberCheck #033     gis4 gis8 a4 gis8
         | \barNumberCheck #034     gis4 gis8 cis=''4 r8 \fermata
-        | \barNumberCheck #035     r4. d='8[( e]) fis
+        | \barNumberCheck #035     r4. d,='8[( e]) fis
         \originalLineBreak
         \originalPageBreak
         
@@ -110,29 +107,34 @@ sopranoMusic =
         | \barNumberCheck #057     fis2.~
         | \barNumberCheck #058     fis2.~
         | \barNumberCheck #059     fis2.\fermata
-        | \barNumberCheck #060     r2.
-        | \barNumberCheck #061     r2.
+        | \barNumberCheck #060     R2.
+        | \barNumberCheck #061     R2.
         \originalLineBreak
         \originalPageBreak
         
         
         | \barNumberCheck #062     g='4 fis8 b4 ais8
         | \barNumberCheck #063     cis4 b8 d4 cis8
-        | \barNumberCheck #064     r2. 
-        | \barNumberCheck #065     r2.
+        | \barNumberCheck #064     R2. 
+        | \barNumberCheck #065     R2.
         \originalLineBreak
         
         | \barNumberCheck #066     cis=''4 b8 b4 ais8
-        | \barNumberCheck #067     r2.
+        | \barNumberCheck #067     R2.
         | \barNumberCheck #068     g4 fis8 fis4 e8
-        | \barNumberCheck #069     r2.
-        | \barNumberCheck #070     r2.
+        | \barNumberCheck #069     R2.
+        | \barNumberCheck #070     R2.
         \originalLineBreak
         
-        | \barNumberCheck #071     r2.
-        | \barNumberCheck #072     r2.
-        | \barNumberCheck #073     r2.
-        | \barNumberCheck #074     r2.\fermata
+        | \barNumberCheck #071     R2.
+        | \barNumberCheck #072     R2.
+        | \barNumberCheck #073     R2.
+        % | \barNumberCheck #074     R2.\fermata
+        %attempting to apply a fermata to a multi-measure rest (the rest denoted with a capital 'R') fails to 
+        %produce the desired graphical fermata and causes LilyPond 
+        % to throw the warning 'warning: MultiMeasureRestText has empty extent and non-empty stencil.'
+        %the fix is to replace \fermata with \fermataMarkup
+        | \barNumberCheck #074     R2.\fermataMarkup
         | \barNumberCheck #075     
             \time 4/4 
             
@@ -165,163 +167,165 @@ sopranoMusic =
         | \barNumberCheck #080     bes4 bes a4. a8
         \originalLineBreak
         
-        | \barNumberCheck #081     
-        | \barNumberCheck #082     
-        | \barNumberCheck #083     
+        | \barNumberCheck #081     bes4 bes a a
+        | \barNumberCheck #082     a4. gis8 fis4 gis
+        | \barNumberCheck #083     b4( a8) r8 r2
         \originalLineBreak
         
-        | \barNumberCheck #084     
-        | \barNumberCheck #085     
-        | \barNumberCheck #086     
-        | \barNumberCheck #087     
-        \originalLineBreak
-        \originalPageBreak
-        
-        | \barNumberCheck #088     
-        | \barNumberCheck #089     
-        | \barNumberCheck #090     
-        | \barNumberCheck #091     
-        \originalLineBreak
-        
-        | \barNumberCheck #092     
-        | \barNumberCheck #093     
-        | \barNumberCheck #094     
-        | \barNumberCheck #095     
-        \originalLineBreak
-        
-        | \barNumberCheck #096     
-        | \barNumberCheck #097     
-        | \barNumberCheck #098     
-        | \barNumberCheck #099     
+        | \barNumberCheck #084     e2 e
+        | \barNumberCheck #085     d d 
+        | \barNumberCheck #086     d~ d4. f8
+        | \barNumberCheck #087     e1\fermata
         \originalLineBreak
         \originalPageBreak
         
-        
-        | \barNumberCheck #100     
-        | \barNumberCheck #101     
-        | \barNumberCheck #102     
-        | \barNumberCheck #103     
+        | \barNumberCheck #088     \time 6/8 R2.
+        | \barNumberCheck #089     R2.
+        | \barNumberCheck #090     R2.
+        | \barNumberCheck #091     R2.\fermataMarkup
         \originalLineBreak
         
-        | \barNumberCheck #104     
-        | \barNumberCheck #105     
-        | \barNumberCheck #106     
-        | \barNumberCheck #107     
+        | \barNumberCheck #092     R2.
+        | \barNumberCheck #093     R2.
+        | \barNumberCheck #094     R2.
+        | \barNumberCheck #095     R2.\fermataMarkup
+        \originalLineBreak
+        
+        | \barNumberCheck #096     b=8[( dis]) fis g4 fis8
+        | \barNumberCheck #097     b=[( dis]) fis g4 fis8
+        | \barNumberCheck #098     b=[( e]) fis g[( fis]) e
+        | \barNumberCheck #099     c[( e]) fis g[( fis e])
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #100     cis='8[( e]) fis g[( fis]) e
+        | \barNumberCheck #101     dis='[( fis=']) a c[( b]) a
+        | \barNumberCheck #102     gis[( b]) cis d[( cis]) b
+        | \barNumberCheck #103     ais[( cis]) e g4.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #104     g=''8[( fis]) e e[( d]) cis
+        | \barNumberCheck #105     b[( cis]) d d4 cis8
+        | \barNumberCheck #106     g=''8[( fis]) e e[( d]) cis
+        | \barNumberCheck #107     b[( cis]) d d4( cis8)
 
         \originalLineBreak
-        | \barNumberCheck #108     
-        | \barNumberCheck #109     
-        | \barNumberCheck #110     
-        | \barNumberCheck #111     
+        | \barNumberCheck #108     fis=''8[( e]) d d[( cis]) b
+        | \barNumberCheck #109     e[( d]) cis cis[( b]) a
+        | \barNumberCheck #110     d[( cis]) b b[( a]) gis
+        | \barNumberCheck #111     fis[( gis]) a a4 gis8
         \originalLineBreak
         \originalPageBreak
         
         
-        | \barNumberCheck #112     
-        | \barNumberCheck #113     
-        | \barNumberCheck #114     
-        | \barNumberCheck #115     
+        | \barNumberCheck #112     d=''8[( cis]) b b[( a]) gis
+        | \barNumberCheck #113     fis[( gis]) a8 a4( gis8)
+        | \barNumberCheck #114     gis4 gis8 a4 gis8
+        | \barNumberCheck #115     gis4 gis8 cis4 r8\fermata
         \originalLineBreak
         
-        | \barNumberCheck #116     
-        | \barNumberCheck #117     
-        | \barNumberCheck #118     
+        | \barNumberCheck #116     r4. d='8[( e]) fis
+        | \barNumberCheck #117     gis4 gis8 fis[( gis]) a
+        | \barNumberCheck #118     b4 b8 a[( b]) cis
         \originalLineBreak
         
-        | \barNumberCheck #119     
-        | \barNumberCheck #120     
-        | \barNumberCheck #121     
-        | \barNumberCheck #122     
-        \originalLineBreak
-        \originalPageBreak
-        
-        
-        | \barNumberCheck #123     
-        | \barNumberCheck #124     
-        | \barNumberCheck #125     
-        | \barNumberCheck #126     
-        \originalLineBreak
-        
-        | \barNumberCheck #127     
-        | \barNumberCheck #128     
-        | \barNumberCheck #129     
-        | \barNumberCheck #130     
-        \originalLineBreak
-        
-        | \barNumberCheck #131     
-        | \barNumberCheck #132     
-        | \barNumberCheck #133     
-        | \barNumberCheck #134     
-        | \barNumberCheck #135     
+        | \barNumberCheck #119     dis4. cis8[( dis]) eis
+        | \barNumberCheck #120     fis[( e]) d8 r4.
+        | \barNumberCheck #121     e8[( d]) cis r4.
+        | \barNumberCheck #122     d8[( cis]) b r4.
         \originalLineBreak
         \originalPageBreak
         
         
-        | \barNumberCheck #136     
-        | \barNumberCheck #137     
-        | \barNumberCheck #138     
-        | \barNumberCheck #139     
-        | \barNumberCheck #140     
+        | \barNumberCheck #123     cis=''8[( b]) a r4.
+        | \barNumberCheck #124     eis8[( gis]) b d[( cis]) b
+        | \barNumberCheck #125     ais[( cis]) e g4.\fermata
+        | \barNumberCheck #126     fis8[( e]) d cis4 cis8
         \originalLineBreak
         
-        | \barNumberCheck #141     
-        | \barNumberCheck #142     
-        | \barNumberCheck #143     
-        | \barNumberCheck #144     
+        | \barNumberCheck #127     d8[( cis]) b a4 a8
+        | \barNumberCheck #128     b[( a]) gis fis4 fis8
+        | \barNumberCheck #129     g8[( fis]) e d4.
+        | \barNumberCheck #130     f4 f8 f4.~
         \originalLineBreak
         
-        | \barNumberCheck #145     
-        | \barNumberCheck #146     
-        | \barNumberCheck #147     
-        | \barNumberCheck #148     
-        | \barNumberCheck #149     
+        | \barNumberCheck #131     f4. f\fermata
+        | \barNumberCheck #132     fis2.~
+        | \barNumberCheck #133     fis~
+        | \barNumberCheck #134     fis\fermata
+        | \barNumberCheck #135     g4 fis8 g4 fis8
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #136     g4 fis8 g4.~
+        | \barNumberCheck #137     g4. g4.\fermata
+        | \barNumberCheck #138     fis2.~
+        | \barNumberCheck #139     fis2.~
+        | \barNumberCheck #140     fis2.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #141     R2.
+        | \barNumberCheck #142     R2.
+        | \barNumberCheck #143     g='4 fis8 b4 ais8
+        | \barNumberCheck #144     cis4 b8 d4 cis8
+        \originalLineBreak
+        
+        | \barNumberCheck #145     R2.
+        | \barNumberCheck #146     R2.
+        | \barNumberCheck #147     cis4 b8 b4 ais8
+        | \barNumberCheck #148     R2.
+        | \barNumberCheck #149     g4 fis8 fis4 e8
         \originalLineBreak
         \originalPageBreak
 
 
-        | \barNumberCheck #150     
-        | \barNumberCheck #151     
-        | \barNumberCheck #152     
-        | \barNumberCheck #153     
-        | \barNumberCheck #154     
-        | \barNumberCheck #155     
-        | \barNumberCheck #156     
+        | \barNumberCheck #150     R2.
+        | \barNumberCheck #151     R2.
+        | \barNumberCheck #152     R2.
+        | \barNumberCheck #153     R2.
+        | \barNumberCheck #154     R2.
+        | \barNumberCheck #155     R2.
+        | \barNumberCheck #156     R2.\fermataMarkup
         \originalLineBreak
         
-        | \barNumberCheck #157     
-        | \barNumberCheck #158     
-        | \barNumberCheck #159     
-        | \barNumberCheck #160     
+        | \barNumberCheck #157     \time 3/4 \key b \major \set Score.measurePosition=#(ly:make-moment 2 4) fis='8. e16
+        | \barNumberCheck #158     dis4. dis8 e fis
+        | \barNumberCheck #159     gis4 cis, cis8 cis8
+        | \barNumberCheck #160     fis4. dis8 cis cis
         \originalLineBreak
         
-        | \barNumberCheck #161     
-        | \barNumberCheck #162     
-        | \barNumberCheck #163     
-        | \barNumberCheck #164     
+        | \barNumberCheck #161     fis2 fis8 fis
+        | \barNumberCheck #162     b4. gis8 fis fis
+        | \barNumberCheck #163     b4 e, b'8 cis
+        | \barNumberCheck #164     dis4. dis8 dis cis
         \originalLineBreak
         \originalPageBreak
         
         
-        | \barNumberCheck #165     
-        | \barNumberCheck #166     
-        | \barNumberCheck #167     
-        | \barNumberCheck #168     
+        | \barNumberCheck #165     b2 r4
+        | \barNumberCheck #166     R2.
+        | \barNumberCheck #167     r2 b8 b
+        | \barNumberCheck #168     << {b2.~} \\ {b2.~} >>
         \originalLineBreak
         
-        | \barNumberCheck #169     
-        | \barNumberCheck #170     
-        | \barNumberCheck #171     
-        | \barNumberCheck #172     
-        | \barNumberCheck #173     
+        % | \barNumberCheck #169     b4( << b8) \\ fis8) >> r8 g e
+        % | \barNumberCheck #169     b4( < b fis>8) r8 g e
+        | \barNumberCheck #169     << {b4~ b8} \\ {b4( fis8)} >> r8 g e
+        | \barNumberCheck #170     fis4 dis e8 cis
+        | \barNumberCheck #171     dis2 r4
+        | \barNumberCheck #172     r2 d8. d16
+        | \barNumberCheck #173     d4 d8 r8 r4
         \originalLineBreak
         
-        | \barNumberCheck #174     
-        | \barNumberCheck #175     
-        | \barNumberCheck #176     
-        | \barNumberCheck #177     
-        | \barNumberCheck #178     
-        | \barNumberCheck #179     
-        | \barNumberCheck #180      
+        | \barNumberCheck #174     r2 g8. g16
+        | \barNumberCheck #175     g2 g4
+        | \barNumberCheck #176     fis2 fis4
+        | \barNumberCheck #177     eis2 eis4
+        | \barNumberCheck #178     fis2.
+        | \barNumberCheck #179     fis2.
+        | \barNumberCheck #180     b,2.\fermata
         \bar "|."
         \originalLineBreak
         \originalPageBreak 

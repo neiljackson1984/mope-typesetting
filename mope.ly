@@ -51,56 +51,56 @@ scorecontents =
 		%\new Lyrics \lyricsto "soprano" \sopranowordsall
 
 		
-		% \new Staff = alto
-		% <<
-			% \set Staff.instrumentName = "alto"
-			% \set Staff.midiInstrument = #"voice oohs"
-      			% \set Staff.midiMinimumVolume = #0.7
-      			% \set Staff.midiMaximumVolume = #0.7
-			% \new Voice = alto
-			% <<
-				% \clef treble
-				% \timeandkey
-				% \altoMusic
-			% >>
-			% %\new Voice = hiddenlayoutvoice \breakMask
-		% >>
-		% %\new Lyrics \lyricsto "alto" \altowordsall
+		\new Staff = alto
+		<<
+			\set Staff.instrumentName = "alto"
+			\set Staff.midiInstrument = #"voice oohs"
+      			\set Staff.midiMinimumVolume = #0.7
+      			\set Staff.midiMaximumVolume = #0.7
+			\new Voice = alto
+			<<
+				\clef treble
+				\timeandkey
+				\altoMusic
+			>>
+			%\new Voice = hiddenlayoutvoice \breakMask
+		>>
+		%\new Lyrics \lyricsto "alto" \altowordsall
 		
 
-		% \new Staff = tenor
-		% <<
-			% \set Staff.instrumentName = "tenor"
-			% \set Staff.midiInstrument = #"voice oohs"
-      			% \set Staff.midiMinimumVolume = #0.7
-      			% \set Staff.midiMaximumVolume = #0.7
-			% \new Voice = tenor
-			% <<
-				% \clef "treble_8"
-				% \timeandkey
-				% \tenorMusic
-			% >>
-			% %\new Voice = hiddenlayoutvoice \breakMask
-		% >>
-		% %\new Lyrics \lyricsto "tenor" \tenorwordsall
+		\new Staff = tenor
+		<<
+			\set Staff.instrumentName = "tenor"
+			\set Staff.midiInstrument = #"voice oohs"
+      			\set Staff.midiMinimumVolume = #0.7
+      			\set Staff.midiMaximumVolume = #0.7
+			\new Voice = tenor
+			<<
+				\clef "treble_8"
+				\timeandkey
+				\tenorMusic
+			>>
+			%\new Voice = hiddenlayoutvoice \breakMask
+		>>
+		%\new Lyrics \lyricsto "tenor" \tenorwordsall
 
 
 
-		% \new Staff = bass
-		% <<
-			% \set Staff.instrumentName = "bass"
-			% \set Staff.midiInstrument = #"voice oohs"
-      			% \set Staff.midiMinimumVolume = #0.7
-      			% \set Staff.midiMaximumVolume = #0.7
-			% \new Voice = bass
-			% <<
-				% \clef bass
-				% \timeandkey
-				% \bassMusic
-			% >>
-			% %\new Voice = hiddenlayoutvoice \breakMask
-		% >>
-		% %\new Lyrics \lyricsto "bass" \basswordsall
+		\new Staff = bass
+		<<
+			\set Staff.instrumentName = "bass"
+			\set Staff.midiInstrument = #"voice oohs"
+      			\set Staff.midiMinimumVolume = #0.7
+      			\set Staff.midiMaximumVolume = #0.7
+			\new Voice = bass
+			<<
+				\clef bass
+				\timeandkey
+				\bassMusic
+			>>
+			%\new Voice = hiddenlayoutvoice \breakMask
+		>>
+		%\new Lyrics \lyricsto "bass" \basswordsall
 	>>
 }
 
@@ -130,6 +130,8 @@ scorecontents =
 		{
 			\Staff
 			%\remove Instrument_name_engraver
+            % \accidentalStyle voice
+            \accidentalStyle modern-voice-cautionary
 		}
 	}
 	
