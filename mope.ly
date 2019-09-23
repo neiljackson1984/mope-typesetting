@@ -14,6 +14,7 @@
 	% line-width = 6.5\in
     left-margin = 1\in
     right-margin = 1\in
+    top-margin = 1\in
 	
 	print-first-page-number = ##t
 	#(set-paper-size "letter")
@@ -31,41 +32,39 @@
 
 scorecontents = 
 {
-	\new ChoirStaff
+	\new StaffGroup
 	<<
 
-		% \new Staff = soprano
-		% <<
-			% \set Staff.instrumentName = "soprano"
-			% \set Staff.midiInstrument = #"voice oohs"
-      			% \set Staff.midiMinimumVolume = #0.7
-      			% \set Staff.midiMaximumVolume = #0.7
-			% \new Voice = soprano
-			% <<
-				% \clef treble
-				% \timeandkey
-				% \sopranoMusic
-			% >>
-			% %\new Voice = hiddenlayoutvoice	\breakMask
-		% >>
-		% %\new Lyrics \lyricsto "soprano" \sopranowordsall
+		\new Staff = soprano
+		<<
+			\set Staff.instrumentName = "soprano"
+			\set Staff.midiInstrument = #"voice oohs"
+      			\set Staff.midiMinimumVolume = #0.7
+      			\set Staff.midiMaximumVolume = #0.7
+			\new Voice = soprano
+			<<
+				\clef treble
+				\sopranoMusic
+			>>
+			%\new Voice = hiddenlayoutvoice	\breakMask
+		>>
+		\new Lyrics \lyricsto "soprano" \sopranowordsall
 
 		
-		% \new Staff = alto
-		% <<
-			% \set Staff.instrumentName = "alto"
-			% \set Staff.midiInstrument = #"voice oohs"
-      			% \set Staff.midiMinimumVolume = #0.7
-      			% \set Staff.midiMaximumVolume = #0.7
-			% \new Voice = alto
-			% <<
-				% \clef treble
-				% \timeandkey
-				% \altoMusic
-			% >>
-			% %\new Voice = hiddenlayoutvoice \breakMask
-		% >>
-		% %\new Lyrics \lyricsto "alto" \altowordsall
+		\new Staff = alto
+		<<
+			\set Staff.instrumentName = "alto"
+			\set Staff.midiInstrument = #"voice oohs"
+      			\set Staff.midiMinimumVolume = #0.7
+      			\set Staff.midiMaximumVolume = #0.7
+			\new Voice = alto
+			<<
+				\clef treble
+				\altoMusic
+			>>
+			%\new Voice = hiddenlayoutvoice \breakMask
+		>>
+		\new Lyrics \lyricsto "alto" \altowordsall
 		
 
 		\new Staff = tenor
@@ -77,30 +76,28 @@ scorecontents =
 			\new Voice = tenor
 			<<
 				\clef "treble_8"
-				\timeandkey
 				\tenorMusic
 			>>
 			%\new Voice = hiddenlayoutvoice \breakMask
 		>>
-		%\new Lyrics \lyricsto "tenor" \tenorwordsall
+		\new Lyrics \lyricsto "tenor" \tenorwordsall
 
 
 
-		% \new Staff = bass
-		% <<
-			% \set Staff.instrumentName = "bass"
-			% \set Staff.midiInstrument = #"voice oohs"
-      			% \set Staff.midiMinimumVolume = #0.7
-      			% \set Staff.midiMaximumVolume = #0.7
-			% \new Voice = bass
-			% <<
-				% \clef bass
-				% \timeandkey
-				% \bassMusic
-			% >>
-			% %\new Voice = hiddenlayoutvoice \breakMask
-		% >>
-		% %\new Lyrics \lyricsto "bass" \basswordsall
+		\new Staff = bass
+		<<
+			\set Staff.instrumentName = "bass"
+			\set Staff.midiInstrument = #"voice oohs"
+      			\set Staff.midiMinimumVolume = #0.7
+      			\set Staff.midiMaximumVolume = #0.7
+			\new Voice = bass
+			<<
+				\clef bass
+				\bassMusic
+			>>
+			%\new Voice = hiddenlayoutvoice \breakMask
+		>>
+		\new Lyrics \lyricsto "bass" \basswordsall
 	>>
 }
 
@@ -112,7 +109,14 @@ scorecontents =
         tagline =  "Engraved 2019 in Seattle for The Meridian Ensemble; Yuly Kopkin, Artistic Director"
     }
 
-    \markup{<this is the cover page>}
+    \markuplist{
+    
+        \justified-lines{ This is the cover page.  }
+        \justified-lines{
+            The only purpose of this page is to make two-sided printing work correctly, and to make 
+            the page breaks match the original score, which will facilitate transcription of the original score.
+        }
+    }
     \pageBreak
 
     \score
@@ -131,6 +135,8 @@ scorecontents =
                 % \remove Instrument_name_engraver
                 % \accidentalStyle voice
                 \accidentalStyle modern-voice-cautionary
+                \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 12))
+                % \override Staff.BarLine.allow-span-bar = ##t
             }
             
             \context{
@@ -140,6 +146,11 @@ scorecontents =
                 
                 %  print bar numbers on every measure (to aid manual note entry - not for production)
                 \override BarNumber.break-visibility = ##(#f #t #t)
+            }
+            
+            \context{
+                \Lyrics
+                % \override LyricText.color=#red
             }
         }
         

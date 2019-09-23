@@ -4,6 +4,7 @@ sopranoMusic =
     \relative {
         \tempo "Allegro"
         \autoBeamOff
+        \time 6/8  \key d \major 
         | \barNumberCheck #001     R2.
         | \barNumberCheck #002     R2.
         | \barNumberCheck #003     b=8([ d)] fis g4 fis8

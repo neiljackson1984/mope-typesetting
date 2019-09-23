@@ -4,6 +4,7 @@ altoMusic =
     \relative {
         \tempo "Allegro"
         \autoBeamOff
+        \time 6/8  \key d \major 
         | \barNumberCheck #001     ais=8[( b]) cis d4 cis8
         | \barNumberCheck #002     ais[( b]) cis d4 cis8
         | \barNumberCheck #003     b2.

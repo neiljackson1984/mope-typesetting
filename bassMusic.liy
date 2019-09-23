@@ -1,190 +1,299 @@
 \version "2.18.2"
 
 bassMusic =  
-    \relative c' {
-        | \barNumberCheck #001     
-        | \barNumberCheck #002     
-        | \barNumberCheck #003     
-        | \barNumberCheck #004     
-        | \barNumberCheck #005     
-        | \barNumberCheck #006     
-        | \barNumberCheck #007     
-        | \barNumberCheck #008     
-        | \barNumberCheck #009     
-        | \barNumberCheck #010     
-        | \barNumberCheck #011     
-        | \barNumberCheck #012     
-        | \barNumberCheck #013     
-        | \barNumberCheck #014     
-        | \barNumberCheck #015     
-        | \barNumberCheck #016     
-        | \barNumberCheck #017     
-        | \barNumberCheck #018     
-        | \barNumberCheck #019     
-        | \barNumberCheck #020     
-        | \barNumberCheck #021     
-        | \barNumberCheck #022     
-        | \barNumberCheck #023     
-        | \barNumberCheck #024     
-        | \barNumberCheck #025     
-        | \barNumberCheck #026     
-        | \barNumberCheck #027     
-        | \barNumberCheck #028     
-        | \barNumberCheck #029     
-        | \barNumberCheck #030     
-        | \barNumberCheck #031     
-        | \barNumberCheck #032     
-        | \barNumberCheck #033     
-        | \barNumberCheck #034     
-        | \barNumberCheck #035     
-        | \barNumberCheck #036     
-        | \barNumberCheck #037     
-        | \barNumberCheck #038     
-        | \barNumberCheck #039     
-        | \barNumberCheck #040     
-        | \barNumberCheck #041     
-        | \barNumberCheck #042     
-        | \barNumberCheck #043     
-        | \barNumberCheck #044     
-        | \barNumberCheck #045     
-        | \barNumberCheck #046     
-        | \barNumberCheck #047     
-        | \barNumberCheck #048     
-        | \barNumberCheck #049     
-        | \barNumberCheck #050     
-        | \barNumberCheck #051     
-        | \barNumberCheck #052     
-        | \barNumberCheck #053     
-        | \barNumberCheck #054     
-        | \barNumberCheck #055     
-        | \barNumberCheck #056     
-        | \barNumberCheck #057     
-        | \barNumberCheck #058     
-        | \barNumberCheck #059     
-        | \barNumberCheck #060     
-        | \barNumberCheck #061     
-        | \barNumberCheck #062     
-        | \barNumberCheck #063     
-        | \barNumberCheck #064     
-        | \barNumberCheck #065     
-        | \barNumberCheck #066     
-        | \barNumberCheck #067     
-        | \barNumberCheck #068     
-        | \barNumberCheck #069     
-        | \barNumberCheck #070     
-        | \barNumberCheck #071     
-        | \barNumberCheck #072     
-        | \barNumberCheck #073     
-        | \barNumberCheck #074     
+    \relative {
+        \tempo "Allegro"
+        \autoBeamOff
+        \time 6/8  \key d \major 
+        | \barNumberCheck #001     ais,8[( b]) cis d4 cis8
+        | \barNumberCheck #002     ais8[( b]) cis d4 cis8
+        | \barNumberCheck #003     b2.
+        | \barNumberCheck #004     b2.
+        \originalLineBreak
+        
+        | \barNumberCheck #005     b8[( cis]) d e4 d8
+        | \barNumberCheck #006     b8[( cis]) d e4( d8)
+        | \barNumberCheck #007     cis8[( e]) fis g[( fis]) e
+        | \barNumberCheck #008     dis[( fis]) a c[( b]) a
+        \originalLineBreak
+        
+        | \barNumberCheck #009     gis8[( b]) cis d[( cis]) b
+        | \barNumberCheck #010     ais[( cis]) e fis,4.\fermata
+        | \barNumberCheck #011     g4 g8 fis4 fis8
+        | \barNumberCheck #012     g4 g8 fis4 fis8
+        \originalLineBreak
+        \originalPageBreak
+        
+        | \barNumberCheck #013     g4 g8 fis4 fis8
+        | \barNumberCheck #014     g4 g8 fis4.
+        | \barNumberCheck #015     g4 g8 fis4 fis8
+        | \barNumberCheck #016     g4 g8 fis4 r8\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #017     ais,8[( b]) cis d4 cis8
+        | \barNumberCheck #018     ais8[( b]) cis d4 cis8
+        | \barNumberCheck #019     b2.~
+        | \barNumberCheck #020     b2.
+        \originalLineBreak
+        
+        | \barNumberCheck #021     b8[( cis]) d e4 d8
+        | \barNumberCheck #022     b8[( cis]) d e4( d8])
+        | \barNumberCheck #023     cis8[( e]) fis g[( fis]) e
+        | \barNumberCheck #024     dis[( fis]) a c[( b]) a
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #025     gis8[( b]) cis d[( cis]) b
+        | \barNumberCheck #026     ais[( cis]) e fis,4.\fermata
+        | \barNumberCheck #027     fis4.~ fis4 fis8
+        | \barNumberCheck #028     e4.~ e4 e8
+        \originalLineBreak
+        
+        | \barNumberCheck #029     d4. cis4.
+        | \barNumberCheck #030     d4. cis4.
+        | \barNumberCheck #031     d4. cis4.
+        | \barNumberCheck #032     d4. cis4.
+        \originalLineBreak
+        
+        | \barNumberCheck #033     d4 d8 cis4 cis8
+        | \barNumberCheck #034     d4 d8 cis4 r8\fermata
+        | \barNumberCheck #035     a8[( b]) cis d4.
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #036     cis8[( dis]) eis fis4.
+        | \barNumberCheck #037     e8 fis gis a4.
+        | \barNumberCheck #038     gis8[( ais]) bis cis4.
+        \originalLineBreak
+        
+        | \barNumberCheck #039     r4. d8[( cis]) b
+        | \barNumberCheck #040     r4. cis8[( b]) a
+        | \barNumberCheck #041     r4. b8[( a]) gis
+        | \barNumberCheck #042     r4. a8[( gis]) fis
+        \originalLineBreak
+        
+        | \barNumberCheck #043     eis8[( gis]) b d[( cis]) b
+        | \barNumberCheck #044     ais[( cis]) e fis,4.\fermata
+        | \barNumberCheck #045     b4 r8 cis8[( b]) a
+        | \barNumberCheck #046     gis4. a8[( gis]) fis
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #047     eis4. fis8 e d
+        | \barNumberCheck #048     cis4. d8[( cis]) b
+        | \barNumberCheck #049     g2.~
+        | \barNumberCheck #050     g2.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #051     fis2.~
+        | \barNumberCheck #052     fis2.~
+        | \barNumberCheck #053     fis2.\fermata
+        | \barNumberCheck #054     eis4 fis8 eis4 fis8
+        | \barNumberCheck #055     eis4 fis8 eis4.(
+        | \barNumberCheck #056     eis2.)\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #057     fis2.~
+        | \barNumberCheck #058     fis2.~
+        | \barNumberCheck #059     fis2.\fermata
+        | \barNumberCheck #060     <fis' fis,>4 <eis eis,>8 <fis fis,>4 <g g,>8
+        | \barNumberCheck #061      <fis fis,>4 <eis eis,>8 <fis fis,>4.~
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #062     <fis fis,>2.
+        | \barNumberCheck #063     <fis fis,>2.
+        | \barNumberCheck #064     <fis fis,>4 <eis eis,>8 <fis fis,>4 <g g,>8
+        | \barNumberCheck #065     <fis fis,>4 <eis eis,>8 <fis fis,>4.~
+        \originalLineBreak
+        
+        | \barNumberCheck #066     <fis fis,>2.
+        | \barNumberCheck #067     <fis fis,>4 <eis eis,>8 <fis fis,>4.~
+        | \barNumberCheck #068     <fis fis,>2.~
+        | \barNumberCheck #069     <fis fis,>4 <g g,>8 <fis fis,>4 <eis eis,>8 
+        | \barNumberCheck #070     <fis fis,>2.~
+        \originalLineBreak
+        
+        | \barNumberCheck #071     <fis fis,>4 r8 r4.
+        | \barNumberCheck #072     R2.
+        | \barNumberCheck #073     r4. fis,4.~
+        | \barNumberCheck #074     fis2.\fermata
         | \barNumberCheck #075     
-        | \barNumberCheck #076     
-        | \barNumberCheck #077     
-        | \barNumberCheck #078     
-        | \barNumberCheck #079     
-        | \barNumberCheck #080     
-        | \barNumberCheck #081     
-        | \barNumberCheck #082     
-        | \barNumberCheck #083     
-        | \barNumberCheck #084     
-        | \barNumberCheck #085     
-        | \barNumberCheck #086     
-        | \barNumberCheck #087     
-        | \barNumberCheck #088     
-        | \barNumberCheck #089     
-        | \barNumberCheck #090     
-        | \barNumberCheck #091     
-        | \barNumberCheck #092     
-        | \barNumberCheck #093     
-        | \barNumberCheck #094     
-        | \barNumberCheck #095     
-        | \barNumberCheck #096     
-        | \barNumberCheck #097     
-        | \barNumberCheck #098     
-        | \barNumberCheck #099     
-        | \barNumberCheck #100     
-        | \barNumberCheck #101     
-        | \barNumberCheck #102     
-        | \barNumberCheck #103     
-        | \barNumberCheck #104     
-        | \barNumberCheck #105     
-        | \barNumberCheck #106     
-        | \barNumberCheck #107     
-        | \barNumberCheck #108     
-        | \barNumberCheck #109     
-        | \barNumberCheck #110     
-        | \barNumberCheck #111     
-        | \barNumberCheck #112     
-        | \barNumberCheck #113     
-        | \barNumberCheck #114     
-        | \barNumberCheck #115     
-        | \barNumberCheck #116     
-        | \barNumberCheck #117     
-        | \barNumberCheck #118     
-        | \barNumberCheck #119     
-        | \barNumberCheck #120     
-        | \barNumberCheck #121     
-        | \barNumberCheck #122     
-        | \barNumberCheck #123     
-        | \barNumberCheck #124     
-        | \barNumberCheck #125     
-        | \barNumberCheck #126     
-        | \barNumberCheck #127     
-        | \barNumberCheck #128     
-        | \barNumberCheck #129     
-        | \barNumberCheck #130     
-        | \barNumberCheck #131     
-        | \barNumberCheck #132     
-        | \barNumberCheck #133     
-        | \barNumberCheck #134     
-        | \barNumberCheck #135     
-        | \barNumberCheck #136     
-        | \barNumberCheck #137     
-        | \barNumberCheck #138     
-        | \barNumberCheck #139     
-        | \barNumberCheck #140     
-        | \barNumberCheck #141     
-        | \barNumberCheck #142     
-        | \barNumberCheck #143     
-        | \barNumberCheck #144     
-        | \barNumberCheck #145     
-        | \barNumberCheck #146     
-        | \barNumberCheck #147     
-        | \barNumberCheck #148     
-        | \barNumberCheck #149     
-        | \barNumberCheck #150     
-        | \barNumberCheck #151     
-        | \barNumberCheck #152     
-        | \barNumberCheck #153     
-        | \barNumberCheck #154     
-        | \barNumberCheck #155     
-        | \barNumberCheck #156     
-        | \barNumberCheck #157     
-        | \barNumberCheck #158     
-        | \barNumberCheck #159     
-        | \barNumberCheck #160     
-        | \barNumberCheck #161     
-        | \barNumberCheck #162     
-        | \barNumberCheck #163     
-        | \barNumberCheck #164     
-        | \barNumberCheck #165     
-        | \barNumberCheck #166     
-        | \barNumberCheck #167     
-        | \barNumberCheck #168     
-        | \barNumberCheck #169     
-        | \barNumberCheck #170     
-        | \barNumberCheck #171     
-        | \barNumberCheck #172     
-        | \barNumberCheck #173     
-        | \barNumberCheck #174     
-        | \barNumberCheck #175     
-        | \barNumberCheck #176     
-        | \barNumberCheck #177     
-        | \barNumberCheck #178     
-        | \barNumberCheck #179     
-        | \barNumberCheck #180     
-        | \barNumberCheck #181     
-        | \barNumberCheck #182     
-        | \barNumberCheck #183     
-        | \barNumberCheck #184      
+            \time 4/4     
+            \set Score.measurePosition=#(ly:make-moment 2 4)  
+            d'4. d8
+        | \barNumberCheck #076     d4 d4 d4. d8
+        \originalLineBreak
+        \originalPageBreak
+        
+        | \barNumberCheck #077     d4 d d d
+        | \barNumberCheck #078     cis4. cis8 cis4 cis
+        | \barNumberCheck #079     fis4( fis8) r8 d4. d8
+        | \barNumberCheck #080     d4 d4 d4. d8
+        \originalLineBreak
+        
+        | \barNumberCheck #081     d4 d4 d4 dis
+        | \barNumberCheck #082     e4. e8 e4 e
+        | \barNumberCheck #083     <e a,>4( <e a,>8) r8 a,4. e'8 
+        \originalLineBreak
+        
+        | \barNumberCheck #084     g4 g a,4. e'8 
+        | \barNumberCheck #085     f4 f a,4. d8
+        | \barNumberCheck #086     e4 e  f4. d8
+        | \barNumberCheck #087     <e a,>1\fermata
+        \originalLineBreak
+        \originalPageBreak
+        
+        | \barNumberCheck #088     \time 6/8 a,8[( cis]) e f4 e8
+        | \barNumberCheck #089     a,8[( cis]) e f4 e8
+        | \barNumberCheck #090     a,8[( d]) e f[( e]) d
+        | \barNumberCheck #091     a8[( d]) e f4.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #092     bes,8[( d]) f ges4 f8
+        | \barNumberCheck #093     bes,8[( d]) f ges4 f8
+        | \barNumberCheck #094     bes,8[( ees]) fes ges[( fes]) ees
+        | \barNumberCheck #095     bes8[( ees]) fes ges4.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #096     b,2.
+        | \barNumberCheck #097     b2.
+        | \barNumberCheck #098     b8[( e]) fis g[( fis]) e
+        | \barNumberCheck #099     c[( e]) fis g[( fis e])
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #100     cis8[( e]) fis g[( fis]) e
+        | \barNumberCheck #101     dis8[( fis]) a c[( b]) a
+        | \barNumberCheck #102     gis[( b]) cis d[( cis]) b
+        | \barNumberCheck #103     ais[( cis]) e fis,4.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #104     g4 g8 fis4 fis8
+        | \barNumberCheck #105     g4 g8 fis4 fis8
+        | \barNumberCheck #106     g4 g8 fis4 fis8
+        | \barNumberCheck #107     g4 g8 fis4.
+
+        \originalLineBreak
+        | \barNumberCheck #108     fis4.~ fis4 fis8
+        | \barNumberCheck #109     e4.~ e4 e8
+        | \barNumberCheck #110     d4. cis4.
+        | \barNumberCheck #111     d4. cis4.
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #112     d4. cis4.
+        | \barNumberCheck #113     d4. cis4.
+        | \barNumberCheck #114     d4 d8 cis4 cis8
+        | \barNumberCheck #115     d4 d8 cis4 r8\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #116     a8[( b]) cis d4 d8
+        | \barNumberCheck #117     cis8[( dis]) eis fis4 fis8
+        | \barNumberCheck #118     e8[( fis]) gis a4 a8
+        \originalLineBreak
+        
+        | \barNumberCheck #119     gis8[( ais]) bis cis4.
+        | \barNumberCheck #120     r4. d8[( cis]) b
+        | \barNumberCheck #121     r4. cis8[( b]) a
+        | \barNumberCheck #122     r4. b8[( a]) gis
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #123     r4. a8[( gis]) fis
+        | \barNumberCheck #124     eis[( gis]) b d[( cis]) b
+        | \barNumberCheck #125     ais[( cis]) e fis,4.\fermata
+        | \barNumberCheck #126     r4. cis'8[( b]) a
+        \originalLineBreak
+        
+        | \barNumberCheck #127     gis4 gis8 a[( gis]) fis
+        | \barNumberCheck #128     eis4 eis8 fis8[( e]) d
+        | \barNumberCheck #129     cis4 cis8 d8[( cis]) b
+        | \barNumberCheck #130     g2.~
+        \originalLineBreak
+        
+        | \barNumberCheck #131     g2.\fermata
+        | \barNumberCheck #132     fis2.~
+        | \barNumberCheck #133     fis2.~
+        | \barNumberCheck #134     fis2.\fermata
+        | \barNumberCheck #135     eis4 fis8 eis4 fis8
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #136     eis4 fis8 eis4.(
+        | \barNumberCheck #137     eis4.) eis4.\fermata
+        | \barNumberCheck #138     fis2.~
+        | \barNumberCheck #139     fis2.~
+        | \barNumberCheck #140     fis2.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #141     <fis' fis,>4 <eis eis,>8 <fis fis,>4 <g g,>8
+        | \barNumberCheck #142     <fis fis,>4 <eis eis,>8 <fis fis,>4.~
+        | \barNumberCheck #143     <fis fis,>2.~
+        | \barNumberCheck #144     <fis fis,>2.
+        \originalLineBreak
+        
+        | \barNumberCheck #145     <fis fis,>4 <eis eis,>8 <fis fis,>4 <g g,>8
+        | \barNumberCheck #146     <fis fis,>4 <eis eis,>8 <fis fis,>4.~
+        | \barNumberCheck #147     <fis fis,>2.
+        | \barNumberCheck #148     <fis fis,>4 <eis eis,>8 <fis fis,>4.~
+        | \barNumberCheck #149     <fis fis,>2.~
+        \originalLineBreak
+        \originalPageBreak
+
+
+        | \barNumberCheck #150     <fis fis,>4 <g g,>8 <fis fis,>4 <eis eis,>8
+        | \barNumberCheck #151     <fis fis,>2.~
+        | \barNumberCheck #152     <fis fis,>4 r8 r4.
+        | \barNumberCheck #153     R2.
+        | \barNumberCheck #154     R2.
+        | \barNumberCheck #155     r4. fis,4.~
+        | \barNumberCheck #156     fis2.\fermata
+        \originalLineBreak
+        
+        | \barNumberCheck #157     \time 3/4 \key b \major \set Score.measurePosition=#(ly:make-moment 2 4) b8. b16 
+        | \barNumberCheck #158     b4. b8 cis dis
+        | \barNumberCheck #159     e4 e e8 e8
+        | \barNumberCheck #160     dis4. dis8 e e
+        \originalLineBreak
+        
+        | \barNumberCheck #161     dis2 dis8 dis
+        | \barNumberCheck #162     e4. gis8 a a 
+        | \barNumberCheck #163     gis4 gis gis8 g
+        | \barNumberCheck #164     fis4. fis8 fis fis
+        \originalLineBreak
+        \originalPageBreak
+        
+        
+        | \barNumberCheck #165     <fis b,>2 r4
+        | \barNumberCheck #166     R2.
+        | \barNumberCheck #167     r2 g8 g
+        | \barNumberCheck #168     fis4. fis8 g8 g
+        \originalLineBreak
+         
+        | \barNumberCheck #169     fis4 fis8 r8 e8 e8
+        | \barNumberCheck #170     b4 b e8 e
+        | \barNumberCheck #171     b2 b8. a16 
+        | \barNumberCheck #172     g2.(
+        | \barNumberCheck #173     g4) g g8. fis16
+        \originalLineBreak
+        
+        | \barNumberCheck #174     eis2.(
+        | \barNumberCheck #175     eis2) eis4
+        | \barNumberCheck #176     fis2 fis4
+        | \barNumberCheck #177     g2 g4
+        | \barNumberCheck #178     fis2.
+        | \barNumberCheck #179     fis2.
+        | \barNumberCheck #180     <b b,>2.\fermata
         \bar "|."
+        \originalLineBreak
+        \originalPageBreak 
     }
