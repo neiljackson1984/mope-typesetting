@@ -5,21 +5,21 @@ altoMusic =
         \tempo "Allegro"
         \autoBeamOff
         \time 6/8  \key d \major 
-        | \barNumberCheck #001     ais=8[( b]) cis d4 cis8
+        | \barNumberCheck #001     ais=8[(-\markup { \dynamic mp \italic { con molto  } } b]) cis d4 cis8
         | \barNumberCheck #002     ais[( b]) cis d4 cis8
-        | \barNumberCheck #003     b2.
+        | \barNumberCheck #003     b2.\p
         | \barNumberCheck #004     b2.
         \originalLineBreak
         
-        | \barNumberCheck #005     b=8[( cis]) d e4 d8
+        | \barNumberCheck #005     b=8[(\mf cis])\cresc d e4 d8
         | \barNumberCheck #006     b8[( cis]) d e4( d8)
-        | \barNumberCheck #007     cis='([ e)] fis g([ fis)] e
-        | \barNumberCheck #008     dis([ fis)] a c([ b)] a
+        | \barNumberCheck #007     cis='([\f e)] fis g([ fis)] e
+        | \barNumberCheck #008     dis([\< fis)] a c([ b)] a
         \originalLineBreak
         
         | \barNumberCheck #009     gis([ b)] cis d([ cis)] b
-        | \barNumberCheck #010     ais([ cis)] e ais,4. \fermata
-        | \barNumberCheck #011     b4 b8 ais4 ais8
+        | \barNumberCheck #010     ais([ cis)] e\! ais,4. \fermata
+        | \barNumberCheck #011     b4\ff b8 ais4 ais8
         | \barNumberCheck #012     b4 b8 ais4 ais8
         \originalLineBreak
         \originalPageBreak
@@ -30,23 +30,23 @@ altoMusic =
         | \barNumberCheck #016     b4 b8 ais4 r8\fermata
         \originalLineBreak
         
-        | \barNumberCheck #017     ais=8[( b]) cis d4 cis8
-        | \barNumberCheck #018     ais[( b]) cis d4 cis8
+        | \barNumberCheck #017     ais=8[(\mp b]) cis d4 cis8
+        | \barNumberCheck #018     ais[(\cresc b]) cis d4 cis8
         | \barNumberCheck #019     b2.~
         | \barNumberCheck #020     b2.
         \originalLineBreak
         
-        | \barNumberCheck #021     b=8[( cis]) d e4 d8
+        | \barNumberCheck #021     b=8[(\mf cis])\cresc d e4 d8
         | \barNumberCheck #022     b8[( cis]) d e4( d8)
-        | \barNumberCheck #023     cis='([ e)] fis g([ fis)] e
+        | \barNumberCheck #023     cis='([\f\<        e)] fis g([ fis)] e
         | \barNumberCheck #024     dis([ fis)] a c([ b)] a
         \originalLineBreak
         \originalPageBreak
         
         
         | \barNumberCheck #025     gis([ b)] cis d([ cis)] b
-        | \barNumberCheck #026     ais([ cis)] e ais,4. \fermata
-        | \barNumberCheck #027     a4.~ a4 a8
+        | \barNumberCheck #026     ais([ cis)] e\! ais,4. \fermata
+        | \barNumberCheck #027     a4.~\ff a4 a8
         | \barNumberCheck #028     g4.~ g4 g8
         \originalLineBreak
         
@@ -58,12 +58,12 @@ altoMusic =
         
         | \barNumberCheck #033     fis4 fis8 eis4 eis8
         | \barNumberCheck #034     fis4 fis8 eis4 r8\fermata
-        | \barNumberCheck #035     ais=8[( b]) cis d4.
+        | \barNumberCheck #035     ais=8[(\f b]) cis d4.
         \originalLineBreak
         \originalPageBreak
         
         
-        | \barNumberCheck #036     cis8[( dis]) eis fis4.
+        | \barNumberCheck #036     cis8[(\cresc dis]) eis fis4.
         | \barNumberCheck #037     e8 fis gis a4.
         | \barNumberCheck #038     gis8[( ais]) bis cis4.
         \originalLineBreak
@@ -76,27 +76,27 @@ altoMusic =
         
         | \barNumberCheck #043     eis='8[( gis]) b d[( cis]) b
         | \barNumberCheck #044     ais([ cis)] e ais,4. \fermata
-        | \barNumberCheck #045     b4 r8 cis[( b]) a
-        | \barNumberCheck #046     gis4. a8[( gis]) fis
+        | \barNumberCheck #045     b4\ff r8 cis[( b]) a
+        | \barNumberCheck #046     gis4. a8[(\dim gis]) fis
         \originalLineBreak
         \originalPageBreak
         
         
         | \barNumberCheck #047     eis4. fis8 e d
         | \barNumberCheck #048     cis4. d8[( cis]) b
-        | \barNumberCheck #049     b2.~
+        | \barNumberCheck #049     b2.~\fz
         | \barNumberCheck #050     b2.\fermata
         \originalLineBreak
         
-        | \barNumberCheck #051     b4 ais8 b4 ais8
+        | \barNumberCheck #051     b4\mf\dim ais8 b4 ais8
         | \barNumberCheck #052     b4 ais8 b4.~
         | \barNumberCheck #053     b2.\fermata
-        | \barNumberCheck #054     b2.~
+        | \barNumberCheck #054     b2.~\p \dim
         | \barNumberCheck #055     b2.~
         | \barNumberCheck #056     b2.\fermata
         \originalLineBreak
         
-        | \barNumberCheck #057     ais4 b8 ais4 b8
+        | \barNumberCheck #057     ais4\pp\dim b8 ais4 b8
         | \barNumberCheck #058     ais4 b8 ais4.~
         | \barNumberCheck #059     ais2.\fermata
         | \barNumberCheck #060     R2.
@@ -105,15 +105,15 @@ altoMusic =
         \originalPageBreak
         
         
-        | \barNumberCheck #062     b4 b8 g'4 g8
-        | \barNumberCheck #063     fis4 fis8 ais4 ais8
+        | \barNumberCheck #062     b4\f\< b8 g'4 g8
+        | \barNumberCheck #063     fis4 fis8 ais4 ais8\!
         | \barNumberCheck #064     R2.
         | \barNumberCheck #065     R2.
         \originalLineBreak
         
-        | \barNumberCheck #066     fis4 fis8 e4 e8
+        | \barNumberCheck #066     fis4\> fis8 e4 e8\!
         | \barNumberCheck #067     R2.
-        | \barNumberCheck #068     d4 d8 d4 cis8
+        | \barNumberCheck #068     d4\dim d8 d4 cis8
         | \barNumberCheck #069     R2.
         | \barNumberCheck #070     R2.
         \originalLineBreak
@@ -125,43 +125,43 @@ altoMusic =
         | \barNumberCheck #075     
             \time 4/4     
             \set Score.measurePosition=#(ly:make-moment 2 4)  
-            d='4. << fis8 \\ d8 >>
-        | \barNumberCheck #076     << {eis4 eis fis4. fis8} \\ {d4 d d4. d8} >>
+            d='4.\p << fis8 \\ d8 >>
+        | \barNumberCheck #076     << {eis4\> eis\! fis4. fis8} \\ {d4 d d4. d8} >>
         \originalLineBreak
         \originalPageBreak
         
-        | \barNumberCheck #077     << {eis4 eis fis fis} \\ {d4 d d bis} >>
+        | \barNumberCheck #077     << {eis4 eis fis\< fis\!} \\ {d4 d d bis} >>
         | \barNumberCheck #078     << {fis='4. fis8 fis4 eis} \\ {cis='4. cis8 cis4 cis} >>
         % | \barNumberCheck #079     << {e='4~ e8 } \\ {cis='4~ cis8 } >> r8 << { d='4. fis8} \\ { d='4. d8} >>
-        | \barNumberCheck #079     << {e='4~ e8 r8 d='4. fis8} \\ {cis='4~ cis8 r8 d='4. d8} >> 
-        | \barNumberCheck #080     << {eis='4 eis fis4. fis8} \\ {d='4 d d4. d8} >>
+        | \barNumberCheck #079     << {e='4~\> e8\! r8 d='4. fis8} \\ {cis='4~ cis8 r8 d='4. d8} >> 
+        | \barNumberCheck #080     << {eis='4\> eis\! fis4. fis8} \\ {d='4 d d4. d8} >>
         \originalLineBreak
         
-        | \barNumberCheck #081     << {eis4 eis fis fis} \\ {d4 d d bis} >>
-        | \barNumberCheck #082     << {e4. e8} \\ {cis4. cis8} >> d4 d
-        | \barNumberCheck #083     cis4~ cis8 r8 r2
+        | \barNumberCheck #081     << {eis4\> eis\! fis\< fis\!} \\ {d4 d d bis} >>
+        | \barNumberCheck #082     << {e4. e8} \\ {cis4. cis8} >> d4\> d
+        | \barNumberCheck #083     cis4~ cis8\! r8 r2
         \originalLineBreak
         
-        | \barNumberCheck #084     cis='2 cis
+        | \barNumberCheck #084     cis='2\p cis\dim
         | \barNumberCheck #085     b2 b
         | \barNumberCheck #086     b~ b4. b8
-        | \barNumberCheck #087     cis1\fermata
+        | \barNumberCheck #087     cis1\>\fermata
         \originalLineBreak
         \originalPageBreak
         
-        | \barNumberCheck #088     \time 6/8 a=8[( cis]) e f4 e8
-        | \barNumberCheck #089     a=8[( cis]) e f4 e8
+        | \barNumberCheck #088     \time 6/8 a=8[(\!\pp cis]) e f4 e8
+        | \barNumberCheck #089     a=8[(\cresc cis]) e f4 e8
         | \barNumberCheck #090     a=8[( d]) e f[( e]) d
         | \barNumberCheck #091     a=8[( cis]) e f4.\fermata
         \originalLineBreak
         
-        | \barNumberCheck #092     bes=8[( d]) f ges4 f8
-        | \barNumberCheck #093     bes=8[( d]) f ges4 f8
+        | \barNumberCheck #092     bes=8[(\mf d]) f ges4 f8
+        | \barNumberCheck #093     bes=8[(\cresc d]) f ges4 f8
         | \barNumberCheck #094     bes=8[( ees]) f ges[( f]) ees
         | \barNumberCheck #095     bes=8[( e]) f ges4.\fermata
         \originalLineBreak
         
-        | \barNumberCheck #096     b=2.
+        | \barNumberCheck #096     b=2.\f
         | \barNumberCheck #097     b2.
         | \barNumberCheck #098     b8[( e]) fis g[( fis]) e
         | \barNumberCheck #099     c[( e]) fis g[( fis e])
@@ -175,7 +175,7 @@ altoMusic =
         | \barNumberCheck #103     ais[( cis]) e ais,4.\fermata
         \originalLineBreak
         
-        | \barNumberCheck #104     b='4 b8 ais4 ais8
+        | \barNumberCheck #104     b='4\ff b8 ais4 ais8
         | \barNumberCheck #105     b='4 b8 ais4 ais8
         | \barNumberCheck #106     b='4 b8 ais4 ais8
         | \barNumberCheck #107     b='4 b8 ais4.
@@ -195,8 +195,8 @@ altoMusic =
         | \barNumberCheck #115     fis4 fis8 eis4 r8\fermata
         \originalLineBreak
         
-        | \barNumberCheck #116     a=8[( b]) cis d4 d8
-        | \barNumberCheck #117     cis[( dis]) eis fis4 fis8
+        | \barNumberCheck #116     a=8[(\f b]) cis d4 d8
+        | \barNumberCheck #117     cis[(\cresc dis]) eis fis4 fis8
         | \barNumberCheck #118     e[( fis]) gis a4 a8
         \originalLineBreak
         
@@ -214,37 +214,37 @@ altoMusic =
         | \barNumberCheck #126     r4. cis8[( b]) a
         \originalLineBreak
         
-        | \barNumberCheck #127     gis4 gis8 a[( gis]) fis
+        | \barNumberCheck #127     gis4\dim gis8 a[( gis]) fis
         | \barNumberCheck #128     eis4 eis8 fis[( e]) d
         | \barNumberCheck #129     cis4 cis8 d[( cis]) b
-        | \barNumberCheck #130     b2.~
+        | \barNumberCheck #130     b2.~\fz
         \originalLineBreak
         
         | \barNumberCheck #131     b2.\fermata
-        | \barNumberCheck #132     b4 ais8 b4 ais8
-        | \barNumberCheck #133     b4 ais8 b4.~
-        | \barNumberCheck #134     b4. b4.\fermata
-        | \barNumberCheck #135     b2.~
+        | \barNumberCheck #132     b4\mf ais8 b4 ais8
+        | \barNumberCheck #133     b4 ais8\> b4.~
+        | \barNumberCheck #134     b4.\! b4.\fermata
+        | \barNumberCheck #135     b2.~\dim
         \originalLineBreak
         \originalPageBreak
         
         
         | \barNumberCheck #136     b2.~
         | \barNumberCheck #137     b2.\fermata
-        | \barNumberCheck #138     ais4 b8 ais4 b8
+        | \barNumberCheck #138     ais4\p b8 ais4 b8
         | \barNumberCheck #139     ais4 b8 ais4.(
         | \barNumberCheck #140     ais4.) ais4.\fermata
         \originalLineBreak
         
         | \barNumberCheck #141     R2.
         | \barNumberCheck #142     R2.
-        | \barNumberCheck #143     b=4 b8 g'4 g8
+        | \barNumberCheck #143     b=4\f b8 g'4 g8
         | \barNumberCheck #144     fis4 fis8 ais4 ais8
         \originalLineBreak
         
         | \barNumberCheck #145     R2.
         | \barNumberCheck #146     R2.
-        | \barNumberCheck #147     fis4 fis8 e4 e8
+        | \barNumberCheck #147     fis4\dim fis8 e4 e8
         | \barNumberCheck #148     R2.
         | \barNumberCheck #149     d4 d8 d4 cis8
         \originalLineBreak
@@ -253,47 +253,47 @@ altoMusic =
 
         | \barNumberCheck #150     R2.
         | \barNumberCheck #151     R2.
-        | \barNumberCheck #152     fis='4 eis8 fis4.~
-        | \barNumberCheck #153     fis4. fis8 r8 r8
+        | \barNumberCheck #152     fis='4\p eis8\> fis4.~
+        | \barNumberCheck #153     fis4. fis8\! r8 r8
         | \barNumberCheck #154     R2.
         | \barNumberCheck #155     R2.
         | \barNumberCheck #156     R2.\fermataMarkup
         \originalLineBreak
         
-        | \barNumberCheck #157     \time 3/4 \key b \major \set Score.measurePosition=#(ly:make-moment 2 4) dis='8. cis16
+        | \barNumberCheck #157     \time 3/4 \key b \major \set Score.measurePosition=#(ly:make-moment 2 4) dis='8.\f cis16
         | \barNumberCheck #158     b4. b8 b b 
-        | \barNumberCheck #159     ais4 ais4 ais8 ais8
-        | \barNumberCheck #160     b4. b8 ais8 ais8
+        | \barNumberCheck #159     ais4 ais4 ais8\mf ais8
+        | \barNumberCheck #160     b4.\< b8 ais8 ais8\!
         \originalLineBreak
         
-        | \barNumberCheck #161     b2 b8 b
+        | \barNumberCheck #161     b2 b8\cresc b
         | \barNumberCheck #162     b4. e8 dis8 dis8
         | \barNumberCheck #163     e4 e e8 eis
-        | \barNumberCheck #164     fis4. fis8 e e
+        | \barNumberCheck #164     fis4.\f fis8 e e
         \originalLineBreak
         \originalPageBreak
         
         
-        | \barNumberCheck #165     dis2 b8. dis16
+        | \barNumberCheck #165     dis2 b8.\mf dis16
         | \barNumberCheck #166     g4. fis8 b, dis
-        | \barNumberCheck #167     g4 fis8 r8 e8 cis8
+        | \barNumberCheck #167     g4 fis8 r8 e8\p cis8
         | \barNumberCheck #168     dis4. dis8 e cis
         \originalLineBreak
          
         | \barNumberCheck #169     dis4 dis8 r8 e8 cis8
         | \barNumberCheck #170     dis4 b4 b8 b
         | \barNumberCheck #171     b2 r4
-        | \barNumberCheck #172     r2 b8. b16 
+        | \barNumberCheck #172     r2 b8.\p b16 
         | \barNumberCheck #173     b4 b8 r8 r4
         \originalLineBreak
         
         | \barNumberCheck #174     r2 b8. b16 
         | \barNumberCheck #175     b2 b4
-        | \barNumberCheck #176     b2 b4
+        | \barNumberCheck #176     b2\dim b4
         | \barNumberCheck #177     b2 b4
         | \barNumberCheck #178     b2. 
         | \barNumberCheck #179     ais2.
-        | \barNumberCheck #180     b2.\fermata
+        | \barNumberCheck #180     b2.\pp\fermata
         \bar "|."
         \originalLineBreak
         \originalPageBreak 

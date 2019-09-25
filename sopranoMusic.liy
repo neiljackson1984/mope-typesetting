@@ -7,7 +7,7 @@ sopranoMusic =
         \time 6/8  \key d \major 
         | \barNumberCheck #001     R2.
         | \barNumberCheck #002     R2.
-        | \barNumberCheck #003     b=8([- \markup { \dynamic p \italic { con molto  } } d)] fis g4 fis8
+        | \barNumberCheck #003     b=8([ -\markup { \dynamic p \italic { con molto  } } d)] fis g4 fis8
         | \barNumberCheck #004     b,8([\cresc d)] fis g4.~
         \originalLineBreak
         
