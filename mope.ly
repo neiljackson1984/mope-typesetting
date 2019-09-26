@@ -1,5 +1,6 @@
 \version "2.18.2"
 #(ly:set-option 'point-and-click #f)
+\pointAndClickOff
 
 \include "notesandwords.liy"
 
@@ -110,8 +111,7 @@ scorecontents =
     }
 
     \markuplist{
-    
-        \justified-lines{ This is the cover page.  }
+        \justified-lines{This is the cover page.  }
         \justified-lines{
             The only purpose of this page is to make two-sided printing work correctly, and to make 
             the page breaks match the original score, which will facilitate transcription of the original score.
@@ -121,7 +121,6 @@ scorecontents =
 
     \score
     {
-        %  print bar numbers on every measure (to aid manual note entry - not for production)
 
         \transpose c c \scorecontents
 
@@ -137,6 +136,7 @@ scorecontents =
                 \accidentalStyle modern-voice-cautionary
                 \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 12))
                 % \override Staff.BarLine.allow-span-bar = ##t
+                \override DynamicTextSpanner.dash-period = #0 %removes the dashed lines representing "cresc." crescendos, and similar decrescendoes and diminuendos.
             }
             
             \context{
@@ -145,18 +145,20 @@ scorecontents =
                 \numericTimeSignature
                 
                 %  print bar numbers on every measure (to aid manual note entry - not for production)
-                \override BarNumber.break-visibility = ##(#f #t #t)
+                % \override BarNumber.break-visibility = ##(#f #t #t)
             }
             
             \context{
                 \Lyrics
                 % \override LyricText.color=#red
+                 \override LyricText.color=#white
+                 % \override LyricText.font-size=#9
             }
         }
         
         \header
         {
-            title = \markup{ \caps {MOPE N YTEC} } 
+            title = \markup{ \caps {MOPE N YTEC (working version 2019/09/25)} } 
             composer = "<composer goes here>"
             poet = \markup {
               \column {
@@ -169,6 +171,7 @@ scorecontents =
               }
            }
             % arranger = "typeset by Neil Jackson"
+            % arranger="version = 2019/09/25"
             % breakbefore = ##f
         }
         \midi

@@ -13,8 +13,8 @@ originalPageBreak = {\pageBreak}
 
 wordsall = 
 {
- \override LyricText.color=#white
- \override LyricText.font-size=#9
+ % \override LyricText.color=#white
+ % \override LyricText.font-size=#9
     \lyricmode{
        a a  a  a  a  a  a a a  a  a  a  a  a 
        a a  a  a  a  a  a a a  a  a  a  a  a 
